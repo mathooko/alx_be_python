@@ -1,3 +1,4 @@
 hours  = 2
-seconds = 3600
-print ( hours"hour(s)is "seconds"seconds" )
+secInHours=3600
+seconds = hours * secInHours
+print ( hours,"hour(s)is ",seconds,"seconds" )
