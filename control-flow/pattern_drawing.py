@@ -1,4 +1,4 @@
-pInt=input("Enter a positive integer")
+pInt=int(input("Enter a positive integer: "))
 i="*"
 while int(i)< int(pInt):
 
