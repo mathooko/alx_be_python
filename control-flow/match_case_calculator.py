@@ -15,5 +15,4 @@ match operator1:
             print(result=fNumber/sNumber)
         else:
             print("Number cannot divide 0")
-    case _:
-        print("Invalid input")
+   
