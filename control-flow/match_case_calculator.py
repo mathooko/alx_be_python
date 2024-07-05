@@ -1,4 +1,4 @@
-fNumber = int(input("Enter the first number"))
+fNumber = int(input("Enter the first number: "))
 sNumber = int(input("Enter the second number"))
 
 operator1 = input("Choose the operation (+, -, *, /): ")
