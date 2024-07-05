@@ -11,6 +11,9 @@ match operator1:
     case "*":
         print(result=fNumber*sNumber)
     case "/":
-        print(result=fNumber/sNumber)
+        if sNumber != 0:
+            print(result=fNumber/sNumber)
+        else:
+            print("Number cannot divide 0")
     case _:
         print("Invalid input")
