@@ -1,11 +1,10 @@
-pInt=int(input("Enter a positive integer: "))
-i=0
+size=int(input("Enter the size of the pattern: "))
+row=0
 
-while int(i)< int(pInt):
+while row< size:
     # for item in pInt:
-      for i in range(pInt):
-        x=pInt*"*"
+      for i in range(size):
+        x=size*"*"
         print(x)
 #i+=1 Does not work
-      i+=1
-   
+      row+=1
