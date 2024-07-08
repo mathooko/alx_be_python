@@ -1,4 +1,4 @@
-task=input("Enter your task:")
+task=input("Enter your task: ")
 priority=input("Priority (high/medium/low): ")
 
 time_bound=input("Are you time bound?(yes or no)")
