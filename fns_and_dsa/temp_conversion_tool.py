@@ -1,11 +1,34 @@
-temp1=input("Enter the temperature to covert: ")
+FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9
+CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
+temp1=int(input("Enter the temperature to covert: "))
 temperatureUnit=input("Is this temperature in Celsius or Fahrenheit? (C/F): ")
-if temperatureUnit=="C":
-    temp2=temp1*(9/5)+32
-elif temperatureUnit=="F":
 
-    temp1= temp1*(5/9)-32
+def convert_to_fahrenheit(celsius):
+    temp2=temp1*(CELSIUS_TO_FAHRENHEIT_FACTOR)+32
+    print(temp2)
+def convert_to_celsius(fahrenheit):
+    temp2=temp1*(FAHRENHEIT_TO_CELSIUS_FACTOR)-32
+    print(temp1)
+
+if temperatureUnit=="C":
+    convert_to_celsius(fahrenheit)
+    fahrenheit=temp1
+    
+elif temperatureUnit=="F":
+    convert_to_fahrenheit(celsius)
+    celsius=temp1
+    
 else:
     print("Invalid input")
-FAHRENHEIT_TO_CELSIUS_FACTOR
-CELSIUS_TO_FAHRENHEIT_FACTOR
+
+# if temperatureUnit=="C":
+#     convert_to_celsius(fahrenheit)
+#     print(temp2)
+# elif temperatureUnit=="F":
+#     convert_to_fahrenheit(celsius)
+#     print(temp2)
+# else:
+#     print("Invalid input")
+
+# print(temp2)
+
