@@ -5,10 +5,10 @@ temperatureUnit=input("Is this temperature in Celsius or Fahrenheit? (C/F): ")
 
 def convert_to_fahrenheit(celsius):
     temp2=temp1*(CELSIUS_TO_FAHRENHEIT_FACTOR)+32
-    print(temp2)
+    return print(temp2)
 def convert_to_celsius(fahrenheit):
     temp2=temp1*(FAHRENHEIT_TO_CELSIUS_FACTOR)-32
-    print(temp1)
+    return print(temp2)
 
 if temperatureUnit=="C":
     convert_to_celsius(fahrenheit)
