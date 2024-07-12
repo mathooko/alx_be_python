@@ -1,3 +1,24 @@
+def perform_operation( num1, num2, operation):
+
+    match operation:
+        case "+":
+            result=num1+num2
+            print(result)
+        case "-":
+            result=num1-num2
+            print(result)
+        case "*":
+            result=num1*num2
+            print(result)
+        case "/":
+            if num2 == 0:
+                print("Number cannot divide 0")
+            else:
+                result=num1/num2
+                print(result)
+        case _:
+            print("Invalid input")
+
 def main():
     print("Arithmetic Operations")
     num1 = float(input("Enter the first number: "))
@@ -11,23 +32,3 @@ if __name__ == "__main__":
     main()
     
 
-#     fNumber = int(input(def perform_operation():"Enter the first number: "))
-# sNumber = int(input("Enter the second number: "))
-
-# operator1 = input("Choose the operation (+, -, *, /): ")
-def perform_operation(num1, num2, operation):
-
-    match operation:
-        case "+":
-            print(result=num1+num2)
-        case "-":
-            print(result=num1-num2)
-        case "*":
-            print(result=num1*num2)
-        case "/":
-            if num2 != 0:
-                print(result=num1/num2)
-            else:
-                print("Number cannot divide 0")
-        case _:
-            print("Invalid input")
