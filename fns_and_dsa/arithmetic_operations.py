@@ -24,9 +24,9 @@ def perform_operation(num1, num2, operation):
             print(result=num1*num2)
         elif operation== "/":
             if num2 == 0:
-                print("Number cannot divide 0")
+                return print("Number cannot divide 0")
             else:
                 result=num1/num2
-                print(result)
+                return print(result)
         else:
             print("Invalid input")
