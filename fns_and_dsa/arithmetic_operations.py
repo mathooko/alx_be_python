@@ -15,18 +15,18 @@ if __name__ == "__main__":
 # operator1 = input("Choose the operation (+, -, *, /): ")
 def perform_operation(num1, num2, operation):
 
-    match operation:
-        case "+":
+    
+        if operation=="+":
             print(result=num1+num2)
-        case "-":
+        elif operation=="-":
             print(result=num1-num2)
-        case "*":
+        elif operation=="*":
             print(result=num1*num2)
-        case "/":
+        elif operation== "/":
             if num2 == 0:
                 print("Number cannot divide 0")
             else:
                 result=num1/num2
                 print(result)
-        case _:
+        else:
             print("Invalid input")
