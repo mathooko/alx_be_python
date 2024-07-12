@@ -14,15 +14,16 @@ def main():
 
     if temperatureUnit=="C":
         convert_to_celsius(fahrenheit)
-        fahrenheit=temp1
+        global fahrenheit=temp1
         
     elif temperatureUnit=="F":
         convert_to_fahrenheit(celsius)
-        celsius=temp1
+        global celsius=temp1
         
     else:
         print("Invalid input")
-    main()
+    
+main()
 # if temperatureUnit=="C":
 #     convert_to_celsius(fahrenheit)
 #     print(temp2)
