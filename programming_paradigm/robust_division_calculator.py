@@ -14,3 +14,20 @@ def main():
 
 if __name__ == "__main__":
     main()
+class robust_division_calculator:
+
+    def __init__(self,numerator, denominator):
+
+         self.numerator=numerator
+         self.denominator=denominator
+
+
+    def safe_divide(self, numerator,denominator):
+        try:
+            numerator/denominator
+        except ZeroDivisionError:
+            denominator==0
+        else:
+            ans=numerator/denominator
+
+        
