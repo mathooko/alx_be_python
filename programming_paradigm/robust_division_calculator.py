@@ -24,10 +24,12 @@ class robust_division_calculator:
 
     def safe_divide(self, numerator,denominator):
         try:
-            numerator/denominator
+            num = float(numerator)
+            denom = float(denominator)
+            result = num/denom 
         except ZeroDivisionError:
-            denominator==0
-        else:
-            ans=numerator/denominator
+            return "Error: Cannot divide by zero."
+        except ValueError:
+            return "Error: Please enter numeric values only."
 
         
