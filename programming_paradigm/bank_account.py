@@ -1,16 +1,16 @@
 import sys
 # from bank_account import BankAccount
 class BankAccount:
-    def __init__(self, account_balance):
+    def __init__(self, account_balance=0):
 
         self.account_balance=account_balance
 
     def deposit(self,amount):
-        account_balance+=amount
+        self.account_balance+=amount
         return self.account_balance
     def withdraw(self,amount):
-        if account_balance>=amount:
-            account_balance-=amount
+        if self.account_balance>=amount:
+            self.account_balance-=amount
         else :
             print("Insufficient funds")
 def display_balance(self):
