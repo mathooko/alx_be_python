@@ -12,7 +12,7 @@ class BankAccount:
         if self.account_balance>=amount:
             self.account_balance-=amount
         else :
-            print("Insufficient funds")
+            print("Insufficient funds.")
 def display_balance(self):
 
      print(f"Current Balance: ${self.account_balance:.2f}")
