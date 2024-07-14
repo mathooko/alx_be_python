@@ -5,10 +5,10 @@ class BankAccount:
 
         self.account_balance=account_balance
 
-    def deposit(amount):
+    def deposit(self,amount):
         account_balance+=amount
         return self.account_balance
-    def withdraw(amount):
+    def withdraw(self,amount):
         if account_balance>=amount:
             account_balance-=amount
         else :
