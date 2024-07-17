@@ -1,3 +1,4 @@
+import math
 class Shape:
     def __init__(self):
         pass
@@ -8,12 +9,15 @@ class Rectangle(Shape):
         super().__init__()
         self.length=length
         self.width=width
+
+    def area(self):
+        return self.length*self.width
 class Circle(Shape):
     def __init__(self,radius):
         super().__init__()
         self.radius=radius
-    def arae():
-       area=radius*radius *math.pi
+    def arae(self):
+        return math.pi * self.radius**2
 
 from polymorphism_demo import Shape, Rectangle, Circle
 import math
