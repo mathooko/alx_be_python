@@ -29,8 +29,10 @@ class Book:
         self.title=title
         self.author=author
         self._is_checked_out=_is_checked_out
-    class Library ():
-        _books= [] 
+    class Library :
+        def __init__(self):
+
+            self._books= [] 
         def add_book(self):
              if isinstance(book, Book):#Checks whether object book is an instance of the Book class
                 self.books.append(book)
