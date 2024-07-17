@@ -3,8 +3,10 @@ class Book:
     def __init__(self, title, author):
         self.title= title
         self.author=author
+
         def __str__(self):
             return f"{self.title} {self.author}"
+
 class EBook(Book):
     def __init__(self, title, author, file_size):
         super().__init__(title, author)
@@ -15,13 +17,14 @@ class PrintBook(Book):
         self.page_count=page_count
 
 class Library:
-    def __init__(self, books):
-        self.books=books
+    books=[]
     def add_book(self, book):
-        self.book=book
+        if isinstance(book, Book):#Checks whether object book is an instance of the Book class
+            self.books.append(book)
     def list_books(self):
-        print(f"{self.title} is written by {self.author}")
-
+        for book in self.books:
+            print(f"{self.title} is written by {self.author}")
+    
 from library_system import Book, EBook, PrintBook, Library
 
 def main():
