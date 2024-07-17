@@ -29,11 +29,16 @@ class Book:
         self.title=title
         self.author=author
         self._is_checked_out=_is_checked_out
-    class Library (self):
-    
+    class Library ():
+        _books= [] 
         def add_book(self):
-            def check_out_book(self,title):
-                def return_book(self,title):
-                    def list_available_books(self):
-        
-                            return
+             if isinstance(book, Book):#Checks whether object book is an instance of the Book class
+                self.books.append(book)
+        def check_out_book(self,title):
+            self.title=title
+        def return_book(self,title):
+            self.title=title            
+        def list_available_books(self):
+                for book in self.books:
+                    print(f"{self.title}")
+            
