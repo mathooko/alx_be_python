@@ -1,21 +1,21 @@
-# from book_class import Book
-# def main():
-#     # Creating an instance of Book
-#     my_book = Book("1984", "George Orwell", 1949)
+from book_class import Book
+def main():
+    # Creating an instance of Book
+    my_book = Book("1984", "George Orwell", 1949)
 
-#     # Demonstrating the __str__ method
-#     print(str(my_book) ) # Expected to use __str__
+    # Demonstrating the __str__ method
+    print(str(my_book) ) # Expected to use __str__
 
-#     # Demonstrating the __repr__ method
-#     print(repr(my_book))  # Expected to use __repr__
+    # Demonstrating the __repr__ method
+    print(repr(my_book))  # Expected to use __repr__
 
-#     # Deleting a book instance to trigger __del__
-#     del my_book
+    # Deleting a book instance to trigger __del__
+    del my_book
 
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()
 
- #Mastering Inheritance and Composition 
+#Mastering Inheritance and Composition 
 
 # from library_system import Book, EBook, PrintBook, Library
 
@@ -39,26 +39,26 @@
 # if __name__ == "__main__":
 #     main()
 
-# Polymorphism and Method Overriding
+# #Polymorphism and Method Overriding
 
-from polymorphism_demo import Shape, Rectangle, Circle
-import math
+# from polymorphism_demo import Shape, Rectangle, Circle
+# import math
 
-def main():
-    shapes = [
-        Rectangle(10, 5),
-        Circle(7)
-    ]
+# def main():
+#     shapes = [
+#         Rectangle(10, 5),
+#         Circle(7)
+#     ]
 
-    for shape in shapes:
-        print(f"The area of the {shape.__class__.__name__} is: {shape.area()}")
+#     for shape in shapes:
+#         print(f"The area of the {shape.__class__.__name__} is: {shape.area()}")
 
-if __name__ == "__main__":
-    main()    
+# if __name__ == "__main__":
+#     main()    
 
-from class_static_methods_demo import Calculator
+# #class Methods and Static Methods
 
-# class Methods and Static Methods
+# from class_static_methods_demo import Calculator
 
 # def main():
 #     # Using the static method
