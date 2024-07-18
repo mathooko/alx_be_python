@@ -7,8 +7,8 @@
 
 def safe_divide(self, numerator,denominator):
         try:
-            num = float(numerator)
-            denom = float(denominator)
+            self.num = float(numerator)
+            self.denom = float(denominator)
             result = num/denom 
             return f"The result of the division is {result}"
         except ZeroDivisionError:
