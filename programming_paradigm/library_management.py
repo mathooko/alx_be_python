@@ -24,27 +24,43 @@
 #      main()
 
 class Book:
-    def __init__(self, title,author, _is_checked_out):
+    def __init__(self, title,author):
 
         self.title=title
         self.author=author
-        self._is_checked_out=_is_checked_out
+        self._is_checked_out= False
+
+    def check_out_book(self,title):
+            if not self._is_cheecked_out:
+                 self._is_checked_out=True
+            self.title=title
+            return False
+    
+    def return_book(self,title):
+            if self._is_checked_out==True:
+                 self._is_checked_out = False
+                 self.title=title
+            return True          
 class Library :
         def __init__(self):
 
             self._books= [] 
-        def add_book(self):
+        def add_book(self, book):
              if isinstance(book, Book):#Checks whether object book is an instance of the Book class
-                self.books.append(book)
+                self._books.append(book)
                 return True
              return False
         def check_out_book(self,title):
+            if not self._is_cheecked_out:
+                 self._is_checked_out=True
             self.title=title
-            return True
+            return False
         def return_book(self,title):
-            self.title=title
+            if self._is_checked_out==True:
+                 self._is_checked_out = False
+                 self.title=title
             return True          
         def list_available_books(self):
-                for book in self.books:
-                    print(f"{self.title}")
+                for book in self._books:
+                    print(f"{self._books}")
             
