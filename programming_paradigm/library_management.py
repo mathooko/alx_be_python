@@ -20,27 +20,27 @@ def main():
     print("\nAvailable books after returning '1984':")
     library.list_available_books()
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
 
-class Book:
-    def __init__(self, title,author, _is_checked_out):
+# class Book:
+#     def __init__(self, title,author, _is_checked_out):
 
-        self.title=title
-        self.author=author
-        self._is_checked_out=_is_checked_out
-    class Library :
-        def __init__(self):
+#         self.title=title
+#         self.author=author
+#         self._is_checked_out=_is_checked_out
+#     class Library :
+#         def __init__(self):
 
-            self._books= [] 
-        def add_book(self):
-             if isinstance(book, Book):#Checks whether object book is an instance of the Book class
-                self.books.append(book)
-        def check_out_book(self,title):
-            self.title=title
-        def return_book(self,title):
-            self.title=title            
-        def list_available_books(self):
-                for book in self.books:
-                    print(f"{self.title}")
+#             self._books= [] 
+#         def add_book(self):
+#              if isinstance(book, Book):#Checks whether object book is an instance of the Book class
+#                 self.books.append(book)
+#         def check_out_book(self,title):
+#             self.title=title
+#         def return_book(self,title):
+#             self.title=title            
+#         def list_available_books(self):
+#                 for book in self.books:
+#                     print(f"{self.title}")
             
