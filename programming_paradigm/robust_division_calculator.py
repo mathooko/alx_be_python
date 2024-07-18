@@ -1,12 +1,11 @@
-class robust_division_calculator:
+# class robust_division_calculator:
 
-    def __init__(self,numerator, denominator):
+#     def __init__(self,numerator, denominator):
 
-         self.numerator=numerator
-         self.denominator=denominator
+#          self.numerator=numerator
+#          self.denominator=denominator
 
-
-    def safe_divide(self, numerator,denominator):
+def safe_divide(self, numerator,denominator):
         try:
             num = float(numerator)
             denom = float(denominator)
