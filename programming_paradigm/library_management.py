@@ -43,8 +43,9 @@ class Book:
             return True          
 class Library :
         def __init__(self):
+            
+            self._books = [] 
 
-            self._books= [] 
         def add_book(self, book):
              if isinstance(book, Book):#Checks whether object book is an instance of the Book class
                 self._books.append(book)
