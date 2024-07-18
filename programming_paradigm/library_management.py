@@ -36,10 +36,14 @@ class Library :
         def add_book(self):
              if isinstance(book, Book):#Checks whether object book is an instance of the Book class
                 self.books.append(book)
+                return True
+             return False
         def check_out_book(self,title):
             self.title=title
+            return True
         def return_book(self,title):
-            self.title=title            
+            self.title=title
+            return True          
         def list_available_books(self):
                 for book in self.books:
                     print(f"{self.title}")
