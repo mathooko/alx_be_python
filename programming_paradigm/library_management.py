@@ -30,16 +30,16 @@ class Book:
         self.author=author
         self._is_checked_out= False
 
-    def check_out_book(self,title):
+    def check_out_book(self,):
             if not self._is_cheecked_out:
                  self._is_checked_out=True
-            self.title=title
+            #self.title=title
             return False
     
-    def return_book(self,title):
+    def return_book(self):
             if self._is_checked_out==True:
                  self._is_checked_out = False
-                 self.title=title
+                # self.title=title
             return True          
 class Library :
         def __init__(self):
@@ -50,15 +50,15 @@ class Library :
                 self._books.append(book)
                 return True
              return False
-        def check_out_book(self,title):
+        def check_out_book(self):
             if not self._is_cheecked_out:
                  self._is_checked_out=True
-            self.title=title
+            #self.title=title
             return False
-        def return_book(self,title):
+        def return_book(self):
             if self._is_checked_out==True:
                  self._is_checked_out = False
-                 self.title=title
+                 #self.title=title
             return True          
         def list_available_books(self):
                 for book in self._books:
