@@ -22,10 +22,10 @@ class PrintBook(Book):
 
 class Library:
     
-    def __init__(self,title, author):
+    def __init__(self):
         
-        self.title=title
-        self.author=author
+        # self.title=title
+        # self.author=author
         self.books = []
 
     def add_book(self, book):
@@ -35,7 +35,7 @@ class Library:
        return f"{self.title} is written by {self.author} {[str (book)for book in self.books]}"
             # print(f"{self.title} is written by {self.author}")
     
-my_library = Library("Library 1", "James")
+my_library = Library()
 
 # Create instances of each type of book
 classic_book = Book("Pride and Prejudice", "Jane Austen")
