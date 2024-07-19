@@ -22,8 +22,11 @@ class PrintBook(Book):
 
 class Library:
     
-    def __init__(self):
-        self.books=[]
+    def __init__(self, title):
+        
+        # self.title=title
+        self.books = []
+
     def add_book(self, book):
         if isinstance(book, Book):#Checks whether object book is an instance of the Book class
             self.books.append(book)
