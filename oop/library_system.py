@@ -30,9 +30,15 @@ class Library:
         if isinstance(book, Book):#Checks whether object book is an instance of the Book class
             self.books.append(book)
     def list_books(self):
-       return f"{self.title} is written by {self.author} {[str (book)for book in self.books]}"
+        book_list = ""
+    #    return f"{self.title} is written by {self.author} {[str (book)for book in self.books]}"
+
             # print(f"{self.title} is written by {self.author}")
-    
+        for book in self.books:
+        # Append the string representation of each book to the books_list string
+            books_list += str(book) + "\n"
+        
+        return book_list
 # my_library = Library()
 
 # # Create instances of each type of book
