@@ -21,26 +21,46 @@ class PrintBook(Book):
             return f"Book: {self.title} by {self.author}, Page Count: {self.page_count}"
 
 class Library:
-    
+    # books = []
     def __init__(self):
         
         self.books = []
+        # self.name=name
 
     def add_book(self, book):
         if isinstance(book, Book):#Checks whether object book is an instance of the Book class
             self.books.append(book)
     def list_books(self):
-        book_list = ""
+        # book_list = []
     #    return f"{self.title} is written by {self.author} {[str (book)for book in self.books]}"
 
             # print(f"{self.title} is written by {self.author}")
         for book in self.books:
         # Append the string representation of each book to the books_list string
-            books_list += str(book) + "\n"
-        
-        return book_list
-# my_library = Library()
+          
+            print(book)
+        # return book_list
+    # def __str__(self):
+    #     return f"{self.name}"
+#  Blessings Code
+# class Library:
+#     books = []
+#     def add_book(self, book):
+#         if isinstance(book, Book):
+#             self.books.append(book)
+       
+   
+#     def list_books(self):
+#         for book in self.books:
+#             print(book)
 
+# book1=Book("A", "bOB ")
+# print(book1)
+# lib1=Library("Lib 1")
+
+# lib1.add_book(book1)
+# lib1.list_books(book1)
+# print(lib1)
 # # Create instances of each type of book
 # classic_book = Book("Pride and Prejudice", "Jane Austen")
 # digital_novel = EBook("Snow Crash", "Neal Stephenson", 500)
