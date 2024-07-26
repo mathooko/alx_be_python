@@ -13,13 +13,15 @@ def main():
 
         if choice == '1':
             # Prompt for and add an item
-            pass
+            shopping_list.append(item)
         elif choice == '2':
             # Prompt for and remove an item
-            pass
+            shopping_list.remove(item)
+            
         elif choice == '3':
             # Display the shopping list
-            pass
+            if shopping_list:
+                for index, item 
         elif choice == '4':
             print("Goodbye!")
             break
