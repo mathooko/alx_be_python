@@ -12,6 +12,7 @@
 # if __name__ == "__main__":
 #     main()
 
+# Main for shopping_list_manager.py
 
 # def main():
 #     shopping_list = []
