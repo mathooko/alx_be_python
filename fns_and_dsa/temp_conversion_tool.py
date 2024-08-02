@@ -9,7 +9,7 @@ def convert_to_celsius(fahrenheit):
   
 # def main():
 
-temp1=int(input("Enter the temperature to covert: "))
+temp1=int(input("Enter the temperature to convert:"))
 temperatureUnit=input("Is this temperature in Celsius or Fahrenheit? (C/F): ")
 
 if temperatureUnit=="F":
